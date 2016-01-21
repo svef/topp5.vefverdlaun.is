@@ -1,16 +1,19 @@
 
-mixin item(title, href)
+mixin item(title, href, partner)
   p
     if href
       a(href=href target='_blank'): b=title
     else
       b=title
+    if partner
+      | &nbsp;(#{partner})
 
 mixin category(title, subtitle)
-  .column.small-12.large-6.xlarge-4.text-center
+  .column.small-12.large-6.xlarge-4.text-left
     h3
       =title
       if subtitle
         br
         small=subtitle
     block
+    br
