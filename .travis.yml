@@ -19,5 +19,6 @@ deploy:
   bucket: topp5.vefverdlaun.is
   skip_cleanup: true
   local-dir: dist
+  acl: public-read
   on:
     repo: svef/topp5.vefverdlaun.is
