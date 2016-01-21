@@ -4,44 +4,113 @@ block content
   section
     .row.align-center
       .column.large-8.text-center
-        h1 Tilnefningar til Íslensku vefverðlaunanna 2015
-        p Lorem ipsum Do et est et ad in elit cupidatat magna consectetur eu ut proident ea dolore eu minim ullamco reprehenderit exercitation amet Duis sed dolor ullamco enim consectetur anim officia Duis consequat dolore in.
+        h1 <b>Íslensku</b> vefverðlaunin 2015
+        p.lead
+          | Íslensku vefverðlaunin eru uppskeruhátíð <a class='orange' href='http://svef.is' target='_blank'>vefiðnaðarins</a>, haldin með það að markmiði að efla hann, verðlauna bestu vefina og hvetja þá sem starfa á þessum vettvangi til dáða.
+          | Hátíðin sjálf verður haldin með pompi og prakt þann <a class='orange' href='https://www.facebook.com/events/1113227182035199/' target='_blank'>29.janúar í Gamla Bíó</a>.
+
+        p
+          | Átta manna dómnefnd skipuð sérfræðingum í vefmálum, ásamt tveim varamönnum, hefur unnið úr þeim rúmlega 145 verkefnum sem send voru inn að þessu sinni og úrslit liggja nú fyrir.
+          | Veitt verða verðlaun í 15 flokkum, en fjöldi flokkanna endurspeglar breidd þeirra verkefna sem vefiðnaðurinn á Íslandi kemur að.
+
 
   section
     .row.align-center
-      .column.small-12.medium-6.large-5.text-center
-        h2 Heiti flokks
-        p: a(href='#_') Fyrsta
-        p: a(href='#_') Annað
-        p: a(href='#_') Þriðja
-        p: a(href='#_') Fjórða
-      .column.small-12.medium-6.large-5.text-center
-        h2 Heiti flokks
-        p: a(href='#_') Fyrsta
-        p: a(href='#_') Annað
-        p: a(href='#_') Þriðja
-        p: a(href='#_') Fjórða
-      .column.small-12.medium-6.large-5.text-center
-        h2 Heiti flokks
-        p: a(href='#_') Fyrsta
-        p: a(href='#_') Annað
-        p: a(href='#_') Þriðja
-        p: a(href='#_') Fjórða
-      .column.small-12.medium-6.large-5.text-center
-        h2 Heiti flokks
-        p: a(href='#_') Fyrsta
-        p: a(href='#_') Annað
-        p: a(href='#_') Þriðja
-        p: a(href='#_') Fjórða
-      .column.small-12.medium-6.large-5.text-center
-        h2 Heiti flokks
-        p: a(href='#_') Fyrsta
-        p: a(href='#_') Annað
-        p: a(href='#_') Þriðja
-        p: a(href='#_') Fjórða
-      .column.small-12.medium-6.large-5.text-center
-        h2 Heiti flokks
-        p: a(href='#_') Fyrsta
-        p: a(href='#_') Annað
-        p: a(href='#_') Þriðja
-        p: a(href='#_') Fjórða
+      .column.small-12.large-6.text-center
+        h3 Besti íslenski vefurinn
+        p
+          | Dómnefnd velur þann vef sem þykir fremstur meðal jafningja, en besti íslenski vefurinn er að vanda valinn úr tilnefndum vefjum í neðangreindum flokkum.
+
+      .column.small-12.large-6.text-center
+        h3 Besta hönnun og viðmót
+        p Dómnefnd velur þann vef sem þykir skara fram úr í samþættingu á góðu notendaviðmóti og góðri hönnun sem svo spilar vel með starfsemi fyrirtækisins eða vefsins sem um ræðir.
+
+      .column.small-12.large-6.text-center
+        h3 Val fólksins
+        p
+          | Félagsmenn SVEF velja þann vef sem þeim þótti athyglisverðastur á árinu,
+          | valið er að mörgu leiti opið en leitast er við að finna vef sem þótti vera
+          | með áhugaverða nálgun á framsetningu efnis, notkun á tækni, uppbyggingu innihalds o.s.frv. Valið er úr tilnefndum vefjum í neðangreindum flokkum.
+
+      .column.small-12.large-6.text-center
+        h3 Frumlegasti vefurinn
+        p Dómnefnd velur þann vef sem þykir frumlegastur. Hér er horft til þátta eins og best útfærðu nýjungarinnar eða óhefðbundinnar nálgunar við viðfangsefnið. Leitað er að vef sem sýnir að frumkvæði og vinnubrögð sem ganga bak rótgrónum aðferðum skila ferskri útkomu.
+
+      .column.small-12: hr
+
+      +category('Aðgengilegir vefir')
+        +item('Háskólinn í Reykjavík', 'http://hr.is')
+        +item('Hljóðbókasafn Íslands', 'http://www.hbs.is')
+        +item('Netbanki Landsbankans', 'https://netbanki.landsbankinn.is')
+        +item('Nýr vefur Framkvæmdasýslu ríkisins', 'http://www.fsr.is')
+        +item('Öryrkjabandalag Íslands', 'http://www.obi.is')
+
+      +category('Vefmiðlar')
+        +item('Fréttatíminn', 'http://www.frettatiminn.is')
+        +item('Kjarninn.is', 'http://kjarninn.is')
+        +item('KrakkaRÚV', 'http://www.krakkaruv.is')
+        +item('RÚV', 'http://www.RUV.is')
+        +item('Stundin', 'http://www.stundin.is')
+
+      +category('Non-profit vefir')
+        +item('Bréf til bjargar lífi', 'http://www.amnesty.is/bref-til-bjargar-lifi')
+        +item('Eldhús Atlasinn', 'http://www.eldhusatlasinn.is')
+        +item('VR', 'http://www.vr.is')
+        +item('SOS á Íslandi', 'http://www.sos.is')
+        +item('Öryrkjabandalag Íslands', 'http://www.obi.is')
+
+      +category('Opinberir vefir')
+        +item('Búrfellslundur – Mat á umhverfisáhrifum fyrsta vindlundar á Íslandi', 'http://burfellslundur.landsvirkjun.is/')
+        +item('Hverfisskipulag Reykjavíkur', 'http://www.hverfisskipulag.is')
+        +item('Ísland.is', 'https://www.island.is')
+        +item('Visit Iceland', 'http://visiticeland.com')
+        +item('Vínbúðin', 'http://www.vinbudin.is')
+
+      +category('Öpp / Veföpp')
+        +item('Aur', 'http://www.aur.is')
+        +item('Gengi.is', 'http://gengi.is')
+        +item('Mappan - vefapp', 'https://mappan.is/mappan/#/login')
+        +item('QuizUp.com', 'http://www.quizup.com')
+        +item('Vefur Íslandsbanka / Húsnæðislánareiknivél', 'https://www.islandsbanki.is/reiknivel')
+
+      +category('Markaðsherferðir á netinu')
+        +item('EVE Online', 'http://www.eveonline.com')
+        +item('Golfleikur Varðar', 'http://golfleikur.vordur.is/')
+        +item('Innri fegurð', 'http://innrifegurd.bluelagoon.is')
+        +item('Landsbankinn - Iceland Airwaves', 'https://www.landsbankinn.is/icelandairwaves/')
+        +item('Útmeð\'a', 'http://www.utmeda.is')
+
+      +category('Þjónustusvæði starfsmanna')
+        +item('Flugan - innri vefur Isavia og dótturfélaga')
+        +item('Innri vefur Garðabæjar')
+        +item('Innri vefur Reykjavíkurborgar')
+        +item('Innri vefur Símans')
+        +item('Ytri vefur Fræðslusetursins Starfsmenntar og námskeiðakerfi')
+
+      +category('Þjónustusvæði viðskiptavina')
+        +item('Mappan - vefapp', 'https://mappan.is/mappan/#/login')
+        +item('Netbanki Landsbankans', 'https://netbanki.landsbankinn.is')
+        +item('Þjónustuvefur Creditinfo', 'https://www.creditinfo.is/kynningarefni/thjonustuvefur.aspx')
+        +item('Þjónustuvefur Ljósleiðarans', 'http://thjonustuvefur.ljosleidarinn.is')
+        +item('Þjónustuvefur Símans einstaklingar', 'https://www.siminn.is/adstod/klaradu-malid/thjonustuvefur/')
+
+      +category('Einstaklingsvefir')
+        +item('Eldhúsatlasinn', 'http://www.eldhusatlasinn.is')
+        +item('Ég er Unik', 'https://egerunik.is/')
+        +item('Olafur Arnalds', 'http://www.olafurarnalds.com')
+        +item('Persónulegt Portfolio', 'http://roogud.com/')
+        +item('Stuck in Iceland', 'http://www.stuckiniceland.com')
+
+      +category('Fyrirtækjavefir', '(lítil og meðalstór fyrirtæki)')
+        +item('Ljósleiðarinn', 'http://www.ljosleidarinn.is')
+        +item('Sendiráðið', 'http://www.sendiradid.is')
+        +item('Tix Miðasala', 'http://www.tix.is')
+        +item('TripCreator', 'https://tripcreator.com')
+        +item('Vík Prjónsdóttir', 'http://www.vikprjonsdottir.com')
+
+      +category('Fyrirtækjavefir', '(stærri fyrirtæki)')
+        +item('Dominos.is', 'http://www.dominos.is')
+        +item('Háskólinn í Reykjavík', 'http://hr.is')
+        +item('Nordic Visitor', 'https://www.nordicvisitor.com/')
+        +item('Nýr vefur Meniga fyrir alþjóðamarkað', 'http://www.meniga.com')
+        +item('ON - Orka náttúrunnar', 'http://www.on.is')

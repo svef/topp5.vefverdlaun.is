@@ -1,3 +1,4 @@
+include _mixins
 doctype html
 html(svef-load-state='initial-loading')
   include _head
@@ -6,6 +7,9 @@ html(svef-load-state='initial-loading')
     block background
       .background
         include ../../img/swirl.svg
+        footer
+          //- a(href='http://svef.is' target='_blank')
+          include ../../img/logo-svef.svg
 
     main
       block header
@@ -13,9 +17,6 @@ html(svef-load-state='initial-loading')
       block content
 
       block footer
-        footer
-          a(href='http://svef.is' target='_blank')
-            include ../../img/logo-svef.svg
 
     block javascript
       if flags.env === 'production'

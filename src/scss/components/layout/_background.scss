@@ -2,7 +2,7 @@
 .background {
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
-  z-index: 0;
+  z-index: 1;
 
 
   .svg-swirl {
@@ -15,12 +15,12 @@
 
     transform: translate3d(-25%,-5%,0) rotate(25deg);
 
-    transition: all 2500ms;
+    transition: height 2500ms, transform 2500ms;
     transition-delay: 500ms;
 
     path {
       fill: $color-svef-gray-light;
-      transition: all 2500ms;
+      transition: fill 2500ms;
       transition-delay: 500ms;
     }
 
