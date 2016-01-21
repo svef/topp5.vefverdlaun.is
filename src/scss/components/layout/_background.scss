@@ -1,0 +1,47 @@
+
+.background {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 0;
+
+
+  .svg-swirl {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+
+    margin: auto;
+    width: auto;
+    height: 120vh;
+
+    transform: translate3d(-25%,-5%,0) rotate(25deg);
+
+    transition: all 2500ms;
+    transition-delay: 500ms;
+
+    path {
+      fill: $color-svef-gray-light;
+      transition: all 2500ms;
+      transition-delay: 500ms;
+    }
+
+    html[svef-load-state="initial-loading"] &,
+    html[svef-load-state="loading"] & {
+      height: 80vh;
+      transform: translate3d(0,0,0) rotate(0deg);
+      transition-delay: 0ms;
+
+      path {
+        fill: $color-svef-green;
+        transition-delay: 0ms;
+      }
+    }
+  }
+
+  opacity: 1;
+  transition: opacity 500ms;
+
+  html[svef-load-state="initial-loading"] &,
+  html[svef-load-state="loading"] & {
+    opacity: 0;
+  }
+}

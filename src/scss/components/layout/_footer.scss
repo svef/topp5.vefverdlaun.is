@@ -1,0 +1,32 @@
+
+footer {
+  position: fixed;
+  left: 0; right: 0; bottom: 0;
+  z-index: 10;
+
+  margin: 0;
+  padding: $global-padding;
+
+  text-align: center;
+
+  transition: opacity 500ms ease 2000ms;
+
+  opacity: 0.5;
+
+  a {
+    display: inline-block;
+    vertical-align: bottom;
+  }
+
+  svg.svg-logo-svef {
+    display: block;
+    width: 100%;
+    max-width: 120px;
+  }
+
+  html[svef-load-state='initial-loading'] &,
+  html[svef-load-state='loading'] & {
+    opacity: 0;
+    transition-delay: 0ms;
+  }
+}

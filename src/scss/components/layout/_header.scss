@@ -1,0 +1,24 @@
+
+header {
+  display: block;
+  padding: $global-padding*2 $global-padding $global-padding;
+
+  transition: opacity 500ms ease 1000ms;
+
+  .svg-logo-letters,
+  .svg-logo-2015-landscape {
+    display: block;
+    margin: auto;
+    // width: 260px;
+
+    path {
+      fill: $color-svef-green;
+    }
+  }
+
+  html[svef-load-state='initial-loading'] &,
+  html[svef-load-state='loading'] & {
+    opacity: 0;
+    transition-delay: 0ms;
+  }
+}

@@ -1,12 +1,25 @@
 doctype html
-html
+html(svef-load-state='initial-loading')
   include _head
 
   body
-    block header
+    block background
+      .background
+        include ../../img/swirl.svg
 
-    block content
+    main
+      block header
 
-    block footer
+      block content
+
+      block footer
+        footer
+          a(href='http://svef.is' target='_blank')
+            include ../../img/logo-svef.svg
 
     block javascript
+      if flags.env === 'production'
+        script(src='js/project.js')
+        script require(['project']);
+      else
+        script(data-main='js/project' src='js/vendor/require.js')

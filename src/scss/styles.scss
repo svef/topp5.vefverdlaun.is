@@ -1,5 +1,18 @@
 
-html, body {
-  background: #FFD100;
-  color:#26434C;
-}
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,300|Merriweather:400,700,300);
+
+@import "utils/utils";
+
+@import "settings";
+
+@import "foundation/foundation";
+
+@include foundation-global-styles;
+@include foundation-flex-grid;
+@include foundation-typography;
+@include foundation-button;
+
+@import
+  "components/layout/base",
+  "components/section/base",
+  "components/vectors/base";

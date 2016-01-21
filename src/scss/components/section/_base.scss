@@ -1,0 +1,22 @@
+
+section {
+  padding: $global-padding*2 $global-padding;
+
+  position: relative;
+  z-index: 1;
+
+  opacity: 1;
+  transition: opacity 500ms;
+  transition-delay: 1000ms;
+
+  html[svef-load-state="initial-loading"] &,
+  html[svef-load-state="loading"] & {
+    opacity: 0;
+    transition: opacity 250ms;
+    transition-delay: 0ms;
+  }
+
+  &.window-height {
+    height: 100vh;
+  }
+}
