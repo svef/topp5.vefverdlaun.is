@@ -1,0 +1,159 @@
+{
+  "name": "topp5.vefverdlaun.is",
+  "version": "0.0.0",
+  "dest": "./dist/",
+  "server": {
+    "port": 1337,
+    "server": {
+      "baseDir": "./dist/"
+    },
+    "ui": {
+      "port": 1338
+    },
+    "ghostMode": {
+      "clicks": "true",
+      "forms": "true",
+      "scroll": "true"
+    },
+    "logLevel": "info",
+    "logFileChanges": true,
+    "logConnections": true,
+    "logPrefix": "-server-",
+    "open": false,
+    "reloadDelay": 500,
+    "notify": false,
+    "middleware": []
+  },
+  "templates": {
+    "subDir": "/",
+    "src": [
+      "./src/views/**/*.jade",
+      "!./src/views/**/_*.jade"
+    ],
+    "jade": {
+      "pretty": false
+    }
+  },
+  "scripts": {
+    "subDir": "/js",
+    "src": [
+      "./src/js/**/*.js",
+      "!./src/js/vendor/**/*.js"
+    ],
+    "lint": {
+      "config": "./.eslintrc.json",
+      "src": [
+        "./src/js/**/*.js",
+        "!./src/js/vendor/**/*.js"
+      ]
+    },
+    "vendor": {
+      "subDir": "/js/vendor",
+      "src": [
+        "./src/js/vendor/**/*.js"
+      ]
+    }
+  },
+  "styles": {
+    "subDir": "/css",
+    "src": [
+      "./src/scss/**/*.scss",
+      "!./src/scss/**/_*.scss"
+    ],
+    "sass": {
+      "outputStyle": "compressed"
+    },
+    "autoprefixer": {
+      "browsers": [
+        "ie >= 10",
+        "> 1%",
+        "last 2 versions",
+        "Firefox ESR",
+        "Opera 12.1"
+      ],
+      "cascade": false
+    }
+  },
+  "bower": {
+    "scripts": {
+      "filter": "**/*.js",
+      "dest": "./src/js/vendor"
+    },
+    "images": {
+      "filter": "**/*.{png,gif,jpg,jpeg,svg}",
+      "dest": "./src/img/vendor"
+    },
+    "styles": {
+      "filter": [
+        "**/*.scss",
+        "**/*.css"
+      ],
+      "dest": "./src/scss/vendor"
+    },
+    "almond": {
+      "src": "almond/almond.js",
+      "dest": "./src/js/vendor"
+    },
+    "jquery": {
+      "src": "jquery/dist/jquery.js",
+      "dest": "./src/js/vendor"
+    },
+    "requirejs": {
+      "src": "requirejs/require.js",
+      "dest": "./src/js/vendor"
+    },
+    "requirejs-domready": {
+      "src": "requirejs-domready/domReady.js",
+      "dest": "./src/js/vendor"
+    },
+    "cress": {
+      "src": "cress/src/**/*",
+      "dest": "./src/scss/cress"
+    },
+    "foundation-sites": {
+      "src": "foundation-sites/scss/**/*",
+      "dest": "./src/scss/foundation"
+    }
+  },
+  "static": {
+    "images": {
+      "src": "./src/img/**/*.{png,gif,jpg,jpeg,ico,svg}",
+      "subDir": "img/"
+    },
+    "rootassets": {
+      "src": "./src/root/**/*",
+      "subDir": "/"
+    },
+    "fonts": {
+      "src": "./src/fonts/**/*",
+      "subDir": "fonts/"
+    },
+    "videos": {
+      "src": "./src/videos/**/*",
+      "subDir": "videos/"
+    }
+  },
+  "watch": {
+    "styles": {
+      "src": "./src/scss/**/*.scss",
+      "tasks": [
+        "styles"
+      ]
+    },
+    "scripts": {
+      "src": "./src/js/**/*.js",
+      "tasks": [
+        "scripts"
+      ]
+    },
+    "templates": {
+      "src": [
+        "./src/views/**/*.jade",
+        "./src/img/**/*.svg"
+      ],
+      "tasks": [
+        "templates"
+      ]
+    }
+  }
+}
