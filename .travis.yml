@@ -17,6 +17,7 @@ deploy:
   secret_access_key:
     secure: T2ER/4cJX1eC18lm9pxD8zgMZVJVKOfo7chaSLMJME3lNTjkdo/2Z+31lCD4Bi2pek/0f6FSh+sSJa/q7n+w8OgEM94wA04au0jt/8E4W0jBBXPZH3qiFk19wPb9x1146Abcjl+AQn9DE5apTaQ3bY5wOlOT9cHCszAqr5ePRNt9xaooj2thL0gMOKxwGun0yptc6LqOuI4wNKTUqiq2i45eLkOUcGV7a+MOGf1oJW/VXTNY98CJm/4pbaK9QnDsnbLQmCqVeVZ/gar2UIeiTkdisdfKRRLlae+zERkQNhmOQpbRVJeUvuax/AchM/2lgyuCXcO88xiQixeb9Juwd/Ixc+tPnw148SRBEI52XSQHchaoqCf/nqPqCqJ5nLry6xIz7SmzHejIQbTQ/dKvuV9OyFZtiWCT/bjmoekwAubiV0A+RHNFjgnnxQCVm5DABsrXHWmfZvIO8cYhQawChhB54XHWE9pSk8qpkRKvFPGip67e2ixWube6hGU8bOGABvs5+3U8hD1XrdfHeo7a75N4YrA5pvJWf/17z2nGpVaeJoLPQ81VYufQkzEz3Be6FRh+KSg/9rlLhBgteQLF5mlyJcIJRFOGwODlY7bwR90CdT0tPP9iuPwSJxZdnTsb7vz7vwrhD3zzUd6sGi9qK3aFExMfXZuCdCIpJAokn0Y=
   bucket: topp5.vefverdlaun.is
+  skip_cleanup: true
   local-dir: dist
   on:
     repo: svef/topp5.vefverdlaun.is
