@@ -8,11 +8,35 @@ main {
   min-width: rem-calc(320);
   padding-bottom: 100px;
 
-  a.orange {
-    color: $color-svef-orange;
+  h1, h2, h3, h4, h5, h6, p, b, small {
+    cursor: default;
+  }
+  a {
+    cursor: pointer;
+    h1, h2, h3, h4, h5, h6, p, b, small {
+      cursor: pointer;
+    }
+  }
 
-    &:hover {
-      color: darken($color-svef-orange, 5%);
+  .orange {
+    color: $color-svef-orange;
+  }
+
+  .green {
+    color: $color-svef-green;
+  }
+  a.orange:hover {
+    color: darken($color-svef-orange, 5%);
+  }
+  a.green:hover {
+    color: darken($color-svef-green, 5%);
+  }
+
+  p {
+
+    small {
+      display: block;
+      font-size: 80%;
     }
   }
 }

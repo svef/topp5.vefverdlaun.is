@@ -6,28 +6,39 @@ block content
       .column.large-8.text-center
         h1 <b>Íslensku</b> vefverðlaunin 2015
         p.lead
-          | Íslensku vefverðlaunin eru uppskeruhátíð <a class='orange' href='http://svef.is' target='_blank'>vefiðnaðarins</a>, haldin með það að markmiði að efla hann, verðlauna bestu vefina og hvetja þá sem starfa á þessum vettvangi til dáða.
-          | Hátíðin sjálf verður haldin með pompi og prakt þann <a class='orange' href='https://www.facebook.com/events/1113227182035199/' target='_blank'>29.janúar í Gamla Bíó</a>.
+          | Íslensku vefverðlaunin eru uppskeruhátíð
+          aorange(href='http://svef.is' target='_blank') vefiðnaðarins
+          | .
+          | haldin með það að markmiði að efla hann, verðlauna bestu vefina og hvetja þá sem starfa á þessum vettvangi til dáða.
+          | Hátíðin sjálf var haldin með pompi og prakt þann&nbsp;
+          a.orange(href='https://www.facebook.com/events/1113227182035199/' target='_blank') 29.janúar í Gamla Bíó
+          | .
+        p.lead Sigurvegarar viðeigandi flokka má sjá hér að neðan.
 
         p
-          | Átta manna dómnefnd skipuð sérfræðingum í vefmálum, ásamt tveim varamönnum, hefur metið hátt á annað hundrað verkefna sem send voru inn að þessu sinni og úrslit liggja nú fyrir.
-          | Veitt verða verðlaun í 15 flokkum, en fjöldi flokkanna endurspeglar breidd þeirra verkefna sem vefiðnaðurinn á Íslandi kemur að.
-          | Í sviga fyrir aftan heiti verkefnis koma fram samstarfsaðilar, ef einhverjir.
+          | Átta manna dómnefnd skipuð sérfræðingum í vefmálum, ásamt tveim varamönnum,
+          | hefur metið hátt á annað hundrað verkefna sem send voru inn að þessu sinni og úrslit liggja nú fyrir.
+          | Veitt voru verðlaun í 15 flokkum, en fjöldi flokkanna endurspeglar breidd þeirra
+          | verkefna sem vefiðnaðurinn á Íslandi kemur að.
+          | Í sviga fyrir neðan heiti verkefnis koma fram samstarfsaðilar, ef einhverjir.
 
 
   section
     .row.align-center
       .column.small-12.large-6.text-center
         h3 Besti íslenski vefurinn
+        +winner('Tix Miðasala', 'http://www.tix.is', 'Skapalón')
         p
           | Dómnefnd velur þann vef sem þykir fremstur meðal jafningja, en besti íslenski vefurinn er að vanda valinn úr tilnefndum vefjum í neðangreindum flokkum.
 
       .column.small-12.large-6.text-center
         h3 Besta hönnun og viðmót
+        +winner('VÍS.is', 'http://vis.is', 'Kolibri')
         p Dómnefnd velur þann vef sem þykir skara fram úr í samþættingu á góðu notendaviðmóti og góðri hönnun sem svo spilar vel með starfsemi fyrirtækisins eða vefsins sem um ræðir.
 
       .column.small-12.large-6.text-center
         h3 Val fólksins
+        +winner('Nordic Visitor', 'https://www.nordicvisitor.com/', 'Kosmos og Kaos, DaCoda og Snark')
         p
           | Félagsmenn SVEF velja þann vef sem þeim þótti athyglisverðastur á árinu,
           | valið er að mörgu leiti opið en leitast er við að finna vef sem þótti vera
@@ -35,83 +46,84 @@ block content
 
       .column.small-12.large-6.text-center
         h3 Frumlegasti vefurinn
+        +winner('Ljósleiðarinn', 'http://www.ljosleidarinn.is', 'Kosmos og Kaos, Koala, Hvíta Húsið')
         p Dómnefnd velur þann vef sem þykir frumlegastur. Hér er horft til þátta eins og best útfærðu nýjungarinnar eða óhefðbundinnar nálgunar við viðfangsefnið. Leitað er að vef sem sýnir að frumkvæði og vinnubrögð sem ganga bak rótgrónum aðferðum skila ferskri útkomu.
 
       .column.small-12: hr
 
       +category('Aðgengilegir vefir')
+        +winner('Öryrkjabandalag Íslands', 'http://www.obi.is', 'Stefna, Fúnksjón og Sjá')
         +item('Framkvæmdasýsla ríkisins', 'http://www.fsr.is', 'Hugsmiðjan')
         +item('Háskólinn í Reykjavík', 'http://hr.is', 'Hugsmiðjan og Skapalón')
         +item('Hljóðbókasafn Íslands', 'http://www.hbs.is', 'Prógramm ehf.')
         +item('Netbanki Landsbankans', 'https://netbanki.landsbankinn.is')
-        +item('Öryrkjabandalag Íslands', 'http://www.obi.is', 'Stefna, Fúnksjón og Sjá')
 
       +category('Vefmiðlar')
+        +winner('Stundin', 'http://www.stundin.is', 'Útgáfufélagið Stundin ehf, Jón Ingi Stefánsson og Egill Sigurðarson')
         +item('Fréttatíminn', 'http://www.frettatiminn.is', 'Vefstofan')
         +item('Kjarninn.is', 'http://kjarninn.is', 'Overcast software ehf.')
         +item('KrakkaRÚV', 'http://www.krakkaruv.is', 'Nýmiðladeild RÚV, Björn Salvador og Jón Frímannsson')
         +item('RÚV', 'http://www.RUV.is', 'Nýmiðladeild RÚV, Björn Salvador og Jón Frímannsson')
-        +item('Stundin', 'http://www.stundin.is', 'Útgáfufélagið Stundin ehf, Jón Ingi Stefánsson og Egill Sigurðarson')
 
       +category('Non-profit vefir')
-        +item('Bréf til bjargar lífi', 'http://www.amnesty.is/bref-til-bjargar-lifi', 'Hugsmiðjan og Brandenburg')
+        +winner('Bréf til bjargar lífi', 'http://www.amnesty.is/bref-til-bjargar-lifi', 'Hugsmiðjan og Brandenburg')
         +item('Eldhúsatlasinn', 'http://www.eldhusatlasinn.is')
         +item('VR', 'http://www.vr.is', 'Sendiráðið og Sjá')
         +item('SOS á Íslandi', 'http://www.sos.is', 'TM Software')
         +item('Öryrkjabandalag Íslands', 'http://www.obi.is', 'Stefna og Fúnksjón')
 
       +category('Opinberir vefir')
+        +winner('Ísland.is', 'https://www.island.is', 'Advania, Hugsmiðjan og Scytl')
         +item('Búrfellslundur', 'http://burfellslundur.landsvirkjun.is/', 'Jónsson & Le’macks, Mannvit og Skapalón')
         +item('Hverfisskipulag Reykjavíkur', 'http://www.hverfisskipulag.is', 'Brandenburg')
-        +item('Ísland.is', 'https://www.island.is', 'Advania, Hugsmiðjan og Scytl')
         +item('Visit Iceland', 'http://visiticeland.com', 'Skapalón')
         +item('Vínbúðin', 'http://www.vinbudin.is', 'TM software')
 
       +category('Öpp / Veföpp')
+        +winner('QuizUp.com', 'http://www.quizup.com')
         +item('Aur', 'http://www.aur.is', 'Stokkur og Nova')
         +item('Gengi.is', 'http://gengi.is', 'Kolibri')
         +item('Húsnæðislánareiknivél Íslandsbanka', 'https://www.islandsbanki.is/reiknivel', 'Skapalón, Advania og Sjá')
         +item('Mappan – vefapp', 'https://mappan.is/mappan/#/login', 'Kolibri')
-        +item('QuizUp.com', 'http://www.quizup.com')
 
       +category('Markaðsherferðir á netinu')
+        +winner('Innri fegurð', 'http://innrifegurd.bluelagoon.is', 'Kolibri og Döðlur')
         +item('EVE Online', 'http://www.eveonline.com')
         +item('Golfleikur Varðar', 'http://golfleikur.vordur.is/', 'Sendiráðið og Íslenska')
-        +item('Innri fegurð', 'http://innrifegurd.bluelagoon.is', 'Kolibri og Döðlur')
         +item('Landsbankinn – Iceland Airwaves', 'https://www.landsbankinn.is/icelandairwaves/', 'Jónsson & Le’macks og Aranja')
         +item('Útmeð\'a', 'http://www.utmeda.is', 'Tjarnargatan')
 
       +category('Þjónustusvæði starfsmanna')
-        +item('Flugan – innri vefur Isavia og dótturfélaga', '', 'Sendiráðið og Fúnksjón')
+        +winner('Flugan – innri vefur Isavia og dótturfélaga', '', 'Sendiráðið og Fúnksjón')
         +item('Fræðslusetur Starfsmenntar og námskeiðakerfi', '', 'Fúnksjón og Advania')
         +item('Innri vefur Garðabæjar', '', 'Advania')
         +item('Innri vefur Reykjavíkurborgar', '', 'Fúnksjón og IxInternet.de')
         +item('Innri vefur Símans')
 
       +category('Þjónustusvæði viðskiptavina')
+        +winner('Netbanki Landsbankans', 'https://netbanki.landsbankinn.is')
         +item('Mappan – vefapp', 'https://mappan.is/mappan/#/login', 'Kolibri')
-        +item('Netbanki Landsbankans', 'https://netbanki.landsbankinn.is')
         +item('Þjónustuvefur Creditinfo', 'https://www.creditinfo.is/kynningarefni/thjonustuvefur.aspx', 'Skapalón')
         +item('Þjónustuvefur Ljósleiðarans', 'http://thjonustuvefur.ljosleidarinn.is', 'Kosmos og Kaos, Koala')
         +item('Þjónustuvefur Símans, einstaklingar', 'https://www.siminn.is/adstod/klaradu-malid/thjonustuvefur/')
 
       +category('Einstaklingsvefir')
+        +winner('Olafur Arnalds', 'http://www.olafurarnalds.com', 'Ueno')
         +item('Eldhúsatlasinn', 'http://www.eldhusatlasinn.is')
         +item('Ég er Unik', 'https://egerunik.is/', 'Advania')
-        +item('Olafur Arnalds', 'http://www.olafurarnalds.com', 'Ueno')
         +item('Rúnar Guðbjartsson', 'http://roogud.com/')
         +item('Stuck in Iceland', 'http://www.stuckiniceland.com')
 
       +category('Fyrirtækjavefir', '(lítil og meðalstór fyrirtæki)')
+        +winner('Tix Miðasala', 'http://www.tix.is', 'Skapalón')
         +item('Ljósleiðarinn', 'http://www.ljosleidarinn.is', 'Kosmos og Kaos, Koala, Hvíta Húsið')
         +item('Sendiráðið', 'http://www.sendiradid.is', 'Sendiráðið')
-        +item('Tix Miðasala', 'http://www.tix.is', 'Skapalón')
         +item('TripCreator', 'https://tripcreator.com', 'Kapall Markaðsráðgjöf')
         +item('Vík Prjónsdóttir', 'http://www.vikprjonsdottir.com', 'Jordi Serra Vega, Gunnar Þorvaldsson og Sendiráðið')
 
       +category('Fyrirtækjavefir', '(stærri fyrirtæki)')
+        +winner('Meniga.com', 'http://www.meniga.com', 'Róbert Örn Einarsson')
         +item('Dominos.is', 'http://www.dominos.is', 'Skapalón')
         +item('Háskólinn í Reykjavík', 'http://hr.is', 'Hugsmiðjan og Skapalón')
         +item('Nordic Visitor', 'https://www.nordicvisitor.com/', 'Kosmos og Kaos, DaCoda og Snark')
-        +item('Meniga.com', 'http://www.meniga.com', 'Róbert Örn Einarsson')
         +item('Orka náttúrunnar', 'http://www.on.is', 'Kosmos og Kaos og Kapall Markaðsráðgjöf')
