@@ -1,5 +1,6 @@
-# topp5.vefverdlaun.is [![Build Status](https://travis-ci.org/svef/topp5.vefverdlaun.is.svg?branch=master)](https://travis-ci.org/svef/topp5.vefverdlaun.is)
+# topp5.vefverdlaun.is [deprecated] [![Build Status](https://travis-ci.org/svef/topp5.vefverdlaun.is.svg?branch=master)](https://travis-ci.org/svef/topp5.vefverdlaun.is)
 
+This project has been deprecated in favour of the newer [web awards website](https://github.com/svef/vefverdlaun.is)
 
 
 ## Foundation
